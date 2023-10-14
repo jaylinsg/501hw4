@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Word to guess display -->
+    <TextView
+        android:id="@+id/textViewWordToGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"/>
+
+    <!-- Letters buttons -->
+    <GridLayout
+        android:id="@+id/gridLayoutLetters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="7"
+        android:rowCount="4"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <!-- Letter Buttons -->
+        <Button
+            android:id="@+id/buttonA"
+            android:text="@string/letter_A"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonB"
+            android:text="@string/letter_B"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonC"
+            android:text="@string/letter_C"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonD"
+            android:text="@string/letter_D"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonE"
+            android:text="@string/letter_E"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonF"
+            android:text="@string/letter_F"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonG"
+            android:text="@string/letter_G"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonH"
+            android:text="@string/letter_H"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonI"
+            android:text="@string/letter_I"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonJ"
+            android:text="@string/letter_J"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonK"
+            android:text="@string/letter_K"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonL"
+            android:text="@string/letter_L"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonM"
+            android:text="@string/letter_M"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonN"
+            android:text="@string/letter_N"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonO"
+            android:text="@string/letter_O"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonP"
+            android:text="@string/letter_P"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonQ"
+            android:text="@string/letter_Q"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonR"
+            android:text="@string/letter_R"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonS"
+            android:text="@string/letter_S"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonT"
+            android:text="@string/letter_T"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonU"
+            android:text="@string/letter_U"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonV"
+            android:text="@string/letter_V"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonW"
+            android:text="@string/letter_W"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonX"
+            android:text="@string/letter_X"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonY"
+            android:text="@string/letter_Y"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+        <Button
+            android:id="@+id/buttonZ"
+            android:text="@string/letter_Z"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onLetterButtonClick" />
+
+    </GridLayout>
+
+    <!-- Hangman display -->
+    <ImageView
+        android:id="@+id/imageViewHangman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hangman_0"
+        android:layout_below="@id/gridLayoutLetters"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="TODO" />
+
+    <!-- Game Over message -->
+    <TextView
+        android:id="@+id/textViewGameOver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_over"
+        android:textSize="24sp"
+        android:layout_below="@id/imageViewHangman"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <!-- New Game button -->
+    <Button
+        android:id="@+id/buttonNewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_game"
+        android:layout_below="@id/textViewGameOver"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textViewWordToGuessLand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imageViewHangmanLand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hangman_0"
+        android:visibility="gone"
+        android:contentDescription="TODO" />
+
+    <GridLayout
+        android:id="@+id/gridLayoutLettersLand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="8"
+        android:rowCount="4"
+        android:orientation="horizontal"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textViewGameOverLand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonNewGameLand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_game"
+        android:visibility="gone"/>
+
+</RelativeLayout>
