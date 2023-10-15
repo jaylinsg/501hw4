@@ -8,11 +8,14 @@ class HangmanGame(private val words: Array<String>) {
     private var wordToGuess: String = ""
     private var guessedLetters: MutableList<Char> = mutableListOf()
     private var incorrectAttempts: Int = 0
+    private var gameState: GameState = GameState.IN_PROGRESS
+
 
     fun startNewGame() {
         wordToGuess = getRandomWord()
         guessedLetters.clear()
         incorrectAttempts = 0
+        gameState = GameState.IN_PROGRESS
     }
 
     private fun getRandomWord(): String {
@@ -23,6 +26,10 @@ class HangmanGame(private val words: Array<String>) {
         return wordToGuess.map { if (guessedLetters.contains(it)) it else '_' }.joinToString(" ")
     }
 
+    private fun isWordGuessed(): Boolean {
+        return wordToGuess.all { guessedLetters.contains(it) }
+    }
+
     fun guessLetter(letter: Char): Boolean {
         if (guessedLetters.contains(letter)) return false
 
@@ -30,9 +37,19 @@ class HangmanGame(private val words: Array<String>) {
 
         if (!wordToGuess.contains(letter)) {
             incorrectAttempts++
+            if (incorrectAttempts >= MAX_INCORRECT_ATTEMPTS) {
+                gameState = GameState.LOST
+            }
             return false
+        } else if (isWordGuessed()) {
+            gameState = GameState.WON
         }
+
         return true
+    }
+
+    fun getGameState(): GameState {
+        return gameState
     }
 
     fun getIncorrectAttempts(): Int {
@@ -41,10 +58,6 @@ class HangmanGame(private val words: Array<String>) {
 
     fun isGameOver(): Boolean {
         return incorrectAttempts >= MAX_INCORRECT_ATTEMPTS || wordToGuess.all { guessedLetters.contains(it) }
-    }
-
-    companion object {
-        const val MAX_INCORRECT_ATTEMPTS = 6
     }
 
     fun getHangmanImageResource(): Int {
@@ -59,4 +72,14 @@ class HangmanGame(private val words: Array<String>) {
             else -> R.drawable.hangman_0
         }
     }
+
+    companion object {
+        const val MAX_INCORRECT_ATTEMPTS = 6
+    }
+}
+
+enum class GameState {
+    IN_PROGRESS,
+    WON,
+    LOST
 }

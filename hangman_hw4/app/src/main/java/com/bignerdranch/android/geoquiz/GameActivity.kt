@@ -22,7 +22,7 @@ class GameActivity : AppCompatActivity() {
     private lateinit var hangmanImageViewLand: ImageView
 
 
-    private val words = arrayOf("HANGMAN", "COMPUTE", "ANDROID", "STUDIO")
+    private val words = arrayOf("HANGMAN", "COMPUTE", "ANDROID", "STUDIO", "IPHONE", "HOMEWORK", "COLLEGE")
 
     private lateinit var letterButtons: Array<Button>
 
@@ -76,17 +76,22 @@ class GameActivity : AppCompatActivity() {
         val letter = button.text[0]
         val isCorrect = hangmanGame.guessLetter(letter)
         button.isEnabled = false
+
+        // Update the UI based on the game state
         updateUI()
 
-        if (!isCorrect) {
-            // Incorrect guess, update hangman image
-            hangmanImageView.setImageResource(hangmanGame.getHangmanImageResource())
-            if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-                hangmanImageViewLand.setImageResource(hangmanGame.getHangmanImageResource())
+        if (isCorrect) {
+            // Correct guess, but the game is not over
+            if (!hangmanGame.isGameOver()) {
+                // Update hangman image
+                hangmanImageView.setImageResource(hangmanGame.getHangmanImageResource())
+                if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                    hangmanImageViewLand.setImageResource(hangmanGame.getHangmanImageResource())
+                }
             }
         }
 
-        if (isCorrect || hangmanGame.isGameOver()) {
+        if (hangmanGame.isGameOver()) {
             handleGameOver()
         }
     }
@@ -124,8 +129,14 @@ class GameActivity : AppCompatActivity() {
         val gameOverTextView: TextView = findViewById(R.id.textViewGameOver)
         val newGameButton: Button = findViewById(R.id.buttonNewGame)
 
-        gameOverTextView.visibility = TextView.VISIBLE
-        newGameButton.visibility = Button.VISIBLE
+        gameOverTextView.visibility = View.GONE
+        newGameButton.visibility = View.GONE
+
+        // Show the dialog
+        val dialogBuilder = AlertDialog.Builder(this)
+        dialogBuilder.setCancelable(false)
+
+        builder.show()
     }
 
     private fun updateUI() {
