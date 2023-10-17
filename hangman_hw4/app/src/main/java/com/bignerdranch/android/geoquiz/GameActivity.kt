@@ -12,6 +12,7 @@ import android.widget.GridLayout
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 
 class GameActivity : AppCompatActivity() {
@@ -21,16 +22,27 @@ class GameActivity : AppCompatActivity() {
     private lateinit var hangmanImageView: ImageView
     private lateinit var hangmanImageViewLand: ImageView
 
-
     private val words = arrayOf("HANGMAN", "COMPUTE", "ANDROID", "STUDIO", "IPHONE", "HOMEWORK", "COLLEGE")
 
     private lateinit var letterButtons: Array<Button>
+
+    private var hintClickCount = 0
 
     private val letterButtonIds = arrayOf(
         R.id.buttonA, R.id.buttonB, R.id.buttonC, R.id.buttonD, R.id.buttonE, R.id.buttonF, R.id.buttonG,
         R.id.buttonH, R.id.buttonI, R.id.buttonJ, R.id.buttonK, R.id.buttonL, R.id.buttonM, R.id.buttonN,
         R.id.buttonO, R.id.buttonP, R.id.buttonQ, R.id.buttonR, R.id.buttonS, R.id.buttonT, R.id.buttonU,
         R.id.buttonV, R.id.buttonW, R.id.buttonX, R.id.buttonY, R.id.buttonZ
+    )
+
+    private val wordToHintMap = mapOf(
+        "HANGMAN" to "the game you are currently playing",
+        "COMPUTE" to "performing calculations",
+        "ANDROID" to "a mobile operating system",
+        "STUDIO" to "a place for creative work",
+        "IPHONE" to "a popular smartphone",
+        "HOMEWORK" to "tasks assigned to be completed outside the class",
+        "COLLEGE" to "an educational institution"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,6 +67,25 @@ class GameActivity : AppCompatActivity() {
                 button.isEnabled = true
             }
             updateUI()
+        }
+        // Display hint based on the word being guessed
+        val hintButton = findViewById<Button>(R.id.hintButton)
+        val hintMessage = findViewById<TextView>(R.id.hintMessage)
+
+        hintButton.setOnClickListener {
+            hintClickCount++
+
+            // Display hint based on the word being guessed
+            val word = hangmanGame.getWordToDisplay()
+            val hint = wordToHintMap[word] ?: "No hint available"
+
+            hintMessage.text = hint
+
+            // Hide the hint button after three clicks
+            if (hintClickCount >= 3) {
+                hintButton.isEnabled = false
+            }
+            hintMessage.visibility = View.VISIBLE  // Ensure the hintMessage is visible
         }
     }
 

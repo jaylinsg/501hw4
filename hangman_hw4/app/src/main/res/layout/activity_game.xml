@@ -235,6 +235,23 @@
         android:layout_centerHorizontal="true"
         android:visibility="gone"/>
 
+    <Button
+        android:id="@+id/hintButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imageViewHangman"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="-154dp"
+        android:text="Hint" />
+
+    <TextView
+        android:id="@+id/hintMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hintButton"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"/>
+
     <!-- New Game button -->
     <Button
         android:id="@+id/buttonNewGame"

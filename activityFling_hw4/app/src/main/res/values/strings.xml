@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Activity Fling</string>
+    <string name="west">West</string>
+    <string name="south">South</string>
+    <string name="east">East</string>
+    <string name="north">North</string>
+</resources>

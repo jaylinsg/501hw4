@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Accelerometer App</string>
+    <string name="significant_movement_detected">Significant movement detected</string>
+    <string name="movement_status">Movement Status: %s</string>
+    <string name="significant_movement">Significant movement detected</string>
+    <string name="no_significant_movement">No significant movement</string>
+    <string name="current_sensitivity">Current Sensitivity: %.2f</string>
+    <string name="sensitivity_updated">Sensitivity updated: %.2f</string>
+    <string name="sensitivity_label">Sensitivity: %.1f</string>
+
+    <string name="x_axis">X Axis: %.2f m/s²</string>
+    <string name="y_axis">Y Axis: %.2f m/s²</string>
+    <string name="z_axis">Z Axis: %.2f m/s²</string>
+    <style name="SeekBarTheme" parent="Theme.AppCompat">
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+    </style>
+</resources>

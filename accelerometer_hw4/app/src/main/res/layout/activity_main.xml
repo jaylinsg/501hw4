@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/seekBarSensitivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:max="100"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@android:drawable/ic_menu_more"
+        android:theme="@style/SeekBarTheme" />
+
+    <TextView
+        android:id="@+id/sensitivity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBarSensitivity"
+        android:layout_marginTop="10dp"
+        android:text="@string/sensitivity_label" />
+
+    <TextView
+        android:id="@+id/movement_status_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movement_status"
+        android:padding="16dp"
+        android:layout_below="@id/sensitivity_label"/>
+
+    <TextView
+        android:id="@+id/x_axis_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x_axis"
+        android:padding="16dp"
+        android:layout_below="@id/movement_status_text_view"/>
+
+    <TextView
+        android:id="@+id/y_axis_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/y_axis"
+        android:padding="16dp"
+        android:layout_below="@id/x_axis_text_view"/>
+
+    <TextView
+        android:id="@+id/z_axis_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/z_axis"
+        android:padding="16dp"
+        android:layout_below="@id/y_axis_text_view"/>
+
+</RelativeLayout>

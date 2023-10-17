@@ -9,10 +9,24 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b553df7-598d-4809-bfa9-1565d4a5f395" name="Changes" comment="hangman works, but when guess correct it says loss">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a953d55b-b340-4490-a0ab-42ee6efa969d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../activityFling_hw4/app/src/main/java/com/bignerdranch/android/geoquiz/EastActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../activityFling_hw4/app/src/main/java/com/bignerdranch/android/geoquiz/ShakeDetector.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../activityFling_hw4/app/src/main/java/com/bignerdranch/android/geoquiz/SouthActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../activityFling_hw4/app/src/main/java/com/bignerdranch/android/geoquiz/WestActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../activityFling_hw4/app/src/main/res/drawable/arrow_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../activityFling_hw4/app/src/main/res/drawable/goat.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../activityFling_hw4/app/src/main/res/drawable/jordan.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../activityFling_hw4/app/src/main/res/drawable/kobe.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../activityFling_hw4/app/src/main/res/drawable/larry.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../activityFling_hw4/app/src/main/res/drawable/lebron.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../activityFling_hw4/app/src/main/res/layout/activity_east.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../activityFling_hw4/app/src/main/res/layout/activity_north.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../activityFling_hw4/app/src/main/res/layout/activity_south.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../activityFling_hw4/app/src/main/res/layout/activity_west.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/GameActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/GameActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/HangmanGame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/HangmanGame.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_game.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,54 +40,14 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <task path="$PROJECT_DIR$/app">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="GeoQuiz" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="GeoQuiz" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="GeoQuiz" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="GeoQuiz" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectId" id="2VxS3KsTmmQuGIVA8IPhXUHUedy" />
+  <component name="ProjectId" id="2WmkNkgO6w01ZJ72kzjofevYvKy" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -85,7 +59,7 @@
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/jaylinstarlinganaway/Desktop/fall23/cs501/hw4/hangman_hw4&quot;,
-    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1697302144387&quot;
+    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1697519507863&quot;
   }
 }</component>
   <component name="RunManager">
@@ -159,24 +133,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6b553df7-598d-4809-bfa9-1565d4a5f395" name="Changes" comment="" />
-      <created>1695776037451</created>
+      <changelist id="a953d55b-b340-4490-a0ab-42ee6efa969d" name="Changes" comment="" />
+      <created>1697345104247</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1695776037451</updated>
+      <updated>1697345104247</updated>
     </task>
-    <task id="LOCAL-00001" summary="hangman works, but when guess correct it says loss">
-      <created>1697319618367</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1697319618367</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="hangman works, but when guess correct it says loss" />
-    <option name="LAST_COMMIT_MESSAGE" value="hangman works, but when guess correct it says loss" />
   </component>
 </project>

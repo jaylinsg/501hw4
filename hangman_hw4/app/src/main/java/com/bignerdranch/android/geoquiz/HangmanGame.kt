@@ -73,6 +73,21 @@ class HangmanGame(private val words: Array<String>) {
         }
     }
 
+    fun getRemainingLetters(): List<Char> {
+        val remainingLetters = mutableListOf<Char>()
+        for (letter in 'A'..'Z') {
+            if (!guessedLetters.contains(letter)) {
+                remainingLetters.add(letter)
+            }
+        }
+        return remainingLetters
+    }
+
+    // Function to deduct a turn (increment incorrectAttempts)
+    fun deductTurn() {
+        incorrectAttempts++
+    }
+
     companion object {
         const val MAX_INCORRECT_ATTEMPTS = 6
     }
